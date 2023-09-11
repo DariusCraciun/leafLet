@@ -1,0 +1,182 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.body1 {
+  position: relative;
+  display: flex;
+  background-color: white;
+  height: 700px;
+  width: 450px;
+  -webkit-box-shadow: -4px 9px 55px 2px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -4px 9px 55px 2px rgba(0, 0, 0, 0.56);
+  box-shadow: -4px 9px 55px 2px rgba(0, 0, 0, 0.56);
+}
+
+.top {
+  height: 300px;
+  width: 100%;
+
+}
+
+
+.img1 {
+  background-image: url(Capture.JPG);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+
+.text {
+  position: relative;
+  padding: 0.2rem;
+  top: 15%;
+  left: -20%;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(6, 93, 94);
+  transition: all 0.3s ease-in-out;
+}
+
+.text:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+
+}
+
+
+.circle {
+  position: relative;
+  top: -20%;
+  left: 73%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: conic-gradient(rgb(6, 93, 94) 3.6deg, white 0deg);
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: -4px 9px 55px 2px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -4px 9px 55px 2px rgba(0, 0, 0, 0.56);
+  box-shadow: -4px 9px 55px 2px rgba(0, 0, 0, 0.56);
+}
+
+.circle:hover {
+  color: white;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(149, 226, 231);
+}
+
+.progress {
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(6, 93, 94);
+  top: -10%;
+  right: -35%;
+}
+
+.content {
+  position: absolute;
+  width: 240px;
+  height: auto;
+  top: 40%;
+  margin: 1rem;
+  color: rgb(6, 93, 94);
+}
+
+.content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-all;
+  line-height: 2rem;
+}
+
+.content p {
+  font-size: 20px;
+  height: auto;
+  width: 405px;
+}
+
+.time-count #days,
+#hours,
+#minutes,
+#seconds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-style: solid;
+  border-color: rgb(6, 93, 94);
+
+}
+
+.time-count span {
+  color: rgb(6, 93, 94);
+  font-size: 15px;
+}
+
+.time-count {
+  height: 120px;
+  width: 350px;
+  display: flex;
+  position: relative;
+  left: 10%;
+  bottom: -20%;
+  justify-content: center;
+  align-items: center
+}
+
+.time-count div {
+  flex-basis: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-count div p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bottom {
+  background-color: rgb(6, 93, 94);
+  color: white;
+  font-size: 20px;
+  height: 70px;
+  width: 450px;
+  position: absolute;
+  top: 90%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.apply {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* .hover:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+} */
